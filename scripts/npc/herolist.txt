@@ -59,4 +59,5 @@
 	"npc_dota_hero_medusa"			"-1"  
 	"npc_dota_hero_luna"			"-1"  
 	"npc_dota_hero_ancient_apparition"			"-1"  
+	"npc_dota_hero_broodmother"			"-1"  
 }
