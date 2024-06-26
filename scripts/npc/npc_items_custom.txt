@@ -1,0 +1,221 @@
+"DOTAAbilities"
+{
+
+//=================================================================================================================
+	// Black King Bar
+	//=================================================================================================================
+	"item_black_king_bar"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"FightRecapLevel"				"2"
+
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"80 80 80 80 80 80 80 80 80 80 80 80 80 80 12"
+		"AbilityManaCost"				"50"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"5050"
+		"ItemShopTags"					"str;damage;hard_to_tag"
+		"ItemQuality"					"epic"
+		"ItemAliases"					"bkb;black king bar,ass,bad item,trash,garbage,shit,piss,awful,horrible,no good,very bad, bad, not good, dogshit,penis hole, anti-thicc,hatred, hate this, fucking awful, fuck this item"
+		"ItemSellable"					"1"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"				"1"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"bonus_strength"		"10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 50"
+			"bonus_damage"			"25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 80"
+			"duration"				"3 4 5 6 7 6 5 4 3 4 5 6 7 6 5 4 2"
+			"max_level"				"17"
+			"model_scale"			"30 40 50 60 70 50 40 30 30 40 50 60 70 50 40 30"     // Percentage over model scale
+			"magic_resist"			"100"
+		}
+	}
+
+	//=================================================================================================================
+	// Recipe: Black King Bar
+	//=================================================================================================================
+	"item_recipe_black_king_bar"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"Model"							"models/props_gameplay/recipe.vmdl"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"1000"	
+		"ItemShopTags"					"bad item,trash,garbage,shit,piss,awful,horrible,no good,very bad, bad, not good, dogshit,penis hole, anti-thicc,hatred, hate this, fucking awful, fuck this item"
+		"ItemAliases"					"ass,bad item,trash,garbage,shit,piss,awful,horrible,no good,very bad, bad, not good, dogshit,penis hole, anti-thicc,hatred, hate this, fucking awful, fuck this item"
+		
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_black_king_bar"
+		"ItemRequirements"
+		{
+			"01"						"item_ogre_axe;item_mithril_hammer"
+		}
+	}
+		//=================================================================================================================
+	// Rapier
+	//=================================================================================================================
+	"item_rapier"
+	{		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"bonus_spell_amp"		"42"
+			"bonus_damage"			"666"
+			"bonus_damage_base"		"00"
+		}
+	}
+	
+		"item_tome_of_knowledge"
+	{
+		"ItemCost"						"200"
+		"ItemPurchasable"				"1"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemAliases"					"tome of knowledge"
+		"ItemStackable"					"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"AbilitySharedCooldown"			"tome"
+		"ItemInitialCharges"			"1"
+		"ItemDisplayCharges"			"1"
+		"ItemStockMax"					"10"
+		"ItemStockInitial"				"0"
+		"ItemStockTime"					"60"			  
+		"ItemInitialStockTime"			"180"  
+		"IsObsolete"					"0"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+				"xp_bonus"				"700"
+				"xp_per_use"			"75"
+		}
+	}
+	"item_philosophers_stone"
+	{
+			
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"10"
+		"ItemIsNeutralDrop"				"0"
+		"DisplayOverheadAlertOnReceived" "0"
+		"ItemPurchasable"				"1"
+		"ItemSellable"				"1"
+		
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+				"bonus_gpm"			"150"
+				"bonus_mana"		"100"
+				"bonus_damage"		"0"
+		}
+	}
+		"item_travel_boots"
+	{
+		"ItemCost"						"10"
+	}
+	"item_recipe_travel_boots"
+	{
+		"ItemCost"						"10"	
+		"ItemShopTags"					""
+	}
+	
+	"item_recipe_travel_boots_2"
+	{
+		"ItemCost"						"10"	
+	}
+	
+	"item_travel_boots"
+	{
+		"ItemCost"						"20"
+	}
+	
+	"item_travel_boots_2"
+	{
+		"ItemCost"						"30"
+	}
+	"item_ultimate_orb"
+	{
+		"ItemStackable"					"1"
+		"ItemStackableMax"				"8"
+	}
+	"item_platemail"
+	{
+		"SecretShop"					"0"
+	}
+	"item_ultimate_orb"
+	{
+		"SecretShop"					"0"
+	}
+	"item_talisman_of_evasion"
+	{
+		"SecretShop"					"0"
+	}
+	"item_demon_edge"
+	{
+		"SecretShop"					"0"
+	}
+	"item_eagle"
+	{
+		"SecretShop"					"0"
+	}
+	"item_reaver"
+	{
+		"SecretShop"					"0"
+	}
+	"item_relic"
+	{
+		"SecretShop"					"0"
+	}
+	"item_hyperstone"
+	{
+		"SecretShop"					"0"
+	}
+	"item_ring_of_tarrasque"
+	{
+		"SecretShop"					"0"
+	}
+	"item_tiara_of_selemene"
+	{
+		"SecretShop"					"0"
+	}
+	"item_mystic_staff"
+	{
+		"SecretShop"					"0"
+	}
+	"item_energy_booster"
+	{
+		"SecretShop"					"0"
+	}
+	"item_point_booster"
+	{
+		"SecretShop"					"0"
+	}
+	"item_energy_booster"
+	{
+		"SecretShop"					"0"
+	}
+	"item_vitality_booster"
+	{
+		"SecretShop"					"0"
+	}
+	"item_cornucopia"
+	{
+		"SecretShop"					"0"	
+	}
+}
