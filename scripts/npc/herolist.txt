@@ -60,4 +60,6 @@
 	"npc_dota_hero_luna"			"-1"  
 	"npc_dota_hero_ancient_apparition"			"-1"  
 	"npc_dota_hero_broodmother"			"-1"  
+	"npc_dota_hero_mars"			"-1"  
+	"npc_dota_hero_skywrath_mage"			"-1"  
 }

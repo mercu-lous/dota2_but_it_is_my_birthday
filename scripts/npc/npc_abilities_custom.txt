@@ -2907,7 +2907,51 @@
 			"frost_stacks"	"3"
 		}
 	}
-
+	"skywrath_mage_arcane_bolt"
+	{
+		"AbilityCastRange"				"2000"
+	}
+		"skywrath_mage_concussive_shot"
+	{
+		"AbilityCooldown"				"7 6 5 4"
+	}
+		"skywrath_mage_ruin_and_restoration"
+	{
+		"AbilityValues"
+		{
+			"spell_lifesteal"	
+			{
+				"value"		"20 40 60 80"
+				"special_bonus_unique_skywrath_arcane_bolt_lifesteal"			"+20"
+			}
+		}
+	}
+	"mars_spear" {
+		"AbilityManaCost"				"50 55 60 65"
+		"AbilityValues" {
+			"spear_range"		"1200 1400 1600 1800"
+		}
+	}
+	"mars_gods_rebuke"
+	{
+		"AbilityManaCost"				"45"
+		"AbilityValues"
+		{
+			"knockback_distance"		"300"
+		}
+	}
+	"mars_bulwark"
+	{
+		"AbilityValues"
+		{
+			"forward_angle"					"240"
+			"side_angle"					"360"
+			"redirect_speed_penatly"
+			{
+				"value"				"0"
+			}
+		}
+	}
 }
 
 
