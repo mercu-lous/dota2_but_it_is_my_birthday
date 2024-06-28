@@ -62,4 +62,6 @@
 	"npc_dota_hero_broodmother"			"-1"  
 	"npc_dota_hero_mars"			"-1"  
 	"npc_dota_hero_skywrath_mage"			"-1"  
-}
+	"npc_dota_hero_rattletrap"			"-1"  
+	"npc_dota_hero_ember_spirit"			"-1"  
+    }

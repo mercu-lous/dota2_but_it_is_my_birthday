@@ -2927,17 +2927,17 @@
 		}
 	}
 	"mars_spear" {
-		"AbilityManaCost"				"50 55 60 65"
+		"AbilityManaCost"				"30"
 		"AbilityValues" {
-			"spear_range"		"1200 1400 1600 1800"
+			"spear_range"		"1600 1800 20000 2200"
 		}
 	}
 	"mars_gods_rebuke"
 	{
-		"AbilityManaCost"				"45"
+		"AbilityManaCost"				"30"
 		"AbilityValues"
 		{
-			"knockback_distance"		"300"
+			"knockback_distance"		"600"
 		}
 	}
 	"mars_bulwark"
@@ -2952,6 +2952,82 @@
 			}
 		}
 	}
+	"rattletrap_battery_assault"
+	{
+		"AbilityValues"
+		{
+			"interval"
+			{	
+				"value"								"0.7 0.6 0.5 0.4"
+				"special_bonus_unique_clockwerk"		"-0.25"
+			}
+			"damage"
+			{	
+				"value"									"15 30 45 60"
+				"special_bonus_unique_clockwerk_3"		"+15"
+			}
+		}
+	}
+	"rattletrap_power_cogs"
+	{
+		"AbilityValues"
+		{
+			"duration"			"10.0 12.0 14.0 16.0"
+			"attacks_to_destroy"	
+			{
+				"value"					"4"
+				"special_bonus_unique_clockwerk_5"		"+4"
+			}
+			"push_length"		
+			{
+				"value"			"800"
+			}
+			"push_duration"		"1.8"
+		}
+	}
+"rattletrap_hookshot"
+	{
+		"AbilityCooldown"				"0.15"
+		"AbilityManaCost"				"55 40 25"
+		"AbilityValues"
+		{
+				"duration"			"0.001 0.02 0.04"
+				"damage"			"50 100 150"
+		}
+	}
+	"ember_spirit_flame_guard"
+	{
+		"AbilityValues"
+		{
+				"duration"						"18 20 22 24 26"
+				"absorb_amount"					
+				{
+					"value"						"125 200 275 350 425"
+					"special_bonus_unique_ember_spirit_1"			"+200"
+				}	
+		}
+	}
+	"ember_spirit_fire_remnant"
+	{
+		"AbilityCastRange"				"3000"
+		"AbilityCharges"				"6"
+
+		"AbilityValues"
+		{
+				"scepter_range"
+				{
+					"value"			"5000"
+					"RequiresScepter"	"1"
+				}
+                "scepter_max_charges"	
+				{
+					"value"			"10"
+					"RequiresScepter"	"1"
+				}
+		}
+	}
+
+
 }
 
 
