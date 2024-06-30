@@ -178,4 +178,7 @@
 	"npc_dota_hero_broodmother" {
 		"Ability9" "merc_movespeed_cap_increase"
 	}
+	"npc_dota_hero_bane" {
+		"ability9" "merc_prospecting"
+	}
 }

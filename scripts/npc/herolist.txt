@@ -64,4 +64,6 @@
 	"npc_dota_hero_skywrath_mage"			"-1"  
 	"npc_dota_hero_rattletrap"			"-1"  
 	"npc_dota_hero_ember_spirit"			"-1"  
+	"npc_dota_hero_furion"		"-1"  
+    "npc_dota_hero_bane" "-1"
     }
