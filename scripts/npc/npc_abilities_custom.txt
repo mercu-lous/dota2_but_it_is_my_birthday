@@ -1435,6 +1435,42 @@
 			}
 		}
 	}
+"merc_movespeed_cap_increase"
+{
+	"Innate" "1"
+    "BaseClass" "ability_lua"
+    "AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityUnitTargetType" "DOTA_UNIT_TARGET_HERO"
+	"ScriptFile"					"merc_movespeed_cap_increase"
+	"MaxLevel" "1"
+
+    "AbilitySpecial"
+    {
+
+    }
+}
+
+"merc_prospecting" {
+	"Innate" "1"
+    "BaseClass" "ability_lua"
+    "AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityUnitTargetType" "DOTA_UNIT_TARGET_HERO"
+	"ScriptFile"					"merc_prospecting"
+	"MaxLevel" "1"
+
+	"AbilityValues"
+		{
+			"gpm_aura"
+			{
+				"value" "400"
+			}
+			"radius"
+			{
+				"value" "1200"
+				"affected_by_aoe_increase"	"1"
+			}
+		}
+}
 
 	"drow_ranger_multishot" {
 		"AbilityChannelTime"			"2.45"
@@ -2601,41 +2637,22 @@
 
 	"void_spirit_dissimilate"
 	{
-		"AbilityCooldown"				"4"
+		"AbilityCooldown"				"3"
 		"AbilityCharges"		"2"
 		"AbilityChargeRestoreTime" "20 18 16 14"
 	}
 
-	//=================================================================================================================
-	// Void Spirit: Astral Step
-	//=================================================================================================================
 	"void_spirit_astral_step"
 	{
 		"AbilityCooldown"				"0"
 		"AbilityCharges"		"4"
 	}
-	"morphling_accumulation"
-	{
-		"AbilityValues"
-		{
-			"percent_to_increment"			"50.0"
-			"bonus_all_stats_per_level_of_attributes"	"20"		// if changing this, also change bonus_all_stats_pct_tooltip
-			"bonus_all_stats_pct_tooltip"	"1000"
-		}
-	}
 
 	"morphling_waveform"
 	{
 		"AbilityDamage"					"0"
-		"AbilityManaCost"				"45"
 		"AbilityValues"
 		{
-			"speed"					"1250"
-			"AbilityCastRange"
-			{
-				"value"				"1000 1100 1200 1300"
-				"special_bonus_unique_morphling_1"	"+330"
-			}			
 			"AbilityCooldown"
 			{
 				"value"														"11 9 7 5"
@@ -2643,19 +2660,13 @@
 			}
 		}
 	}
-		"morphling_morph"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_HIDDEN"
-	}
 	"morphling_morph_agi"
 	{
 		"MaxLevel" "1"
 		"AbilityValues"
 		{
-			"morph_cooldown"		"0.01"
-			"morph_rate_tooltip"	"100"
+			"morph_cooldown"		"0.001"
+			"morph_rate_tooltip"	"1000"
 		}
 	}
 
@@ -2664,15 +2675,58 @@
 		"MaxLevel" "1"
 		"AbilityValues"
 		{
-			"morph_cooldown"		"0.01"
-			"morph_rate_tooltip"	"100"
+			"morph_cooldown"		"0.001"
+			"morph_rate_tooltip"	"1000"
 		}
 	}
+
+	"morphling_accumulation"
+	{
+		"AbilityValues"
+		{
+			"percent_to_increment"			"50.0"
+			"bonus_all_stats_per_level_of_attributes"	"-2"		// if changing this, also change bonus_all_stats_pct_tooltip
+			"bonus_all_stats_pct_tooltip"	"0"
+		}
+	}
+
 	"disruptor_glimpse"
 	{
 		"AbilityCastRange"				"30000"
+		"AbilityCooldown" "12 10.5 9 7.5"
 	}
-
+"disruptor_kinetic_field"
+	{
+		"AbilityValues"
+		{
+				"AbilityCooldown"				
+				{
+					"value"	"15 13 11 9"
+					"special_bonus_unique_disruptor_2"				"-2"			
+				}
+				"duration"					
+				{
+					"value"					"3.2 3.8 4.4 5"
+					"special_bonus_unique_disruptor_5" "+2"
+				}
+		}
+	}
+	"disruptor_kinetic_fence"
+	{
+		"AbilityValues"
+		{
+			"AbilityChargeRestoreTime"
+			{
+				"value"	"15 13 11 9"
+				"special_bonus_unique_disruptor_2"				"-2"
+			}
+			"duration"
+			{
+				"value"					"3.2 3.8 4.4 5"
+				"special_bonus_unique_disruptor_5"	"+2"
+			}
+		}
+	}
 "riki_tricks_of_the_trade"
 	{
 		"AbilityValues"
@@ -2780,17 +2834,12 @@
 				"value"				"2 3 4 5"
 				"special_bonus_unique_broodmother_6" "+1"
 			}
-			"health_regen"
-			{
-				"value"				"2 4 6 8"
-			}
-			"bonus_movespeed"		"22 34 46 58"
+			"bonus_movespeed"		"30 42 54 66"
 			"AbilityChargeRestoreTime"	
 			{
-				"value"				"35"
+				"value"				"40"
 				"special_bonus_unique_broodmother_5" "-7"
 			}
-			"bonus_turn_rate"	"20"
 		}
 	}
 	"broodmother_spawn_spiderlings"
@@ -2799,7 +2848,7 @@
 		{
 				"count"					
 				{
-					"value"		"6 7 8"
+					"value"		"7 8 9"
 				}
 		}
 	}
@@ -2807,14 +2856,9 @@
 	{
 		"AbilityValues"
 		{
-			"miss_chance"			
-			{
-				"value"		"15 20 25 30"
-				"special_bonus_unique_broodmother_4"	"+30"
-			}
 			"bonus_movespeed"		
 			{
-				"value"		"-25 -30 -35 -40"
+				"value"		"-35 -45 -55 -65"
 				"special_bonus_unique_broodmother_4"	"-30"
 			}
 			"duration"				"2.0 3.0 4.0 5.0"
@@ -2921,15 +2965,15 @@
 		{
 			"spell_lifesteal"	
 			{
-				"value"		"20 40 60 80"
-				"special_bonus_unique_skywrath_arcane_bolt_lifesteal"			"+20"
+				"value"		"50 100 150 200"
+				"special_bonus_unique_skywrath_arcane_bolt_lifesteal"			"+50"
 			}
 		}
 	}
 	"mars_spear" {
 		"AbilityManaCost"				"30"
 		"AbilityValues" {
-			"spear_range"		"1600 1800 20000 2200"
+			"spear_range"		"2000 2400 2800 3200"
 		}
 	}
 	"mars_gods_rebuke"
@@ -2937,7 +2981,7 @@
 		"AbilityManaCost"				"30"
 		"AbilityValues"
 		{
-			"knockback_distance"		"600"
+			"knockback_distance"		"700"
 		}
 	}
 	"mars_bulwark"

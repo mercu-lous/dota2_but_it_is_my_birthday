@@ -169,10 +169,13 @@
 		"MovementSpeed"		"320"
 	}
 	"npc_dota_hero_morphling" {
-		"AttributeStrengthGain"		"4.50000"
-		"AttributeAgilityGain"		"4.50000"
+		"AttributeStrengthGain"		"5.5"
+		"AttributeAgilityGain"		"5.5"
 	}
 	"npc_dota_hero_luna" {
 		"ProjectileSpeed"		"2000"
+	}
+	"npc_dota_hero_broodmother" {
+		"Ability9" "merc_movespeed_cap_increase"
 	}
 }

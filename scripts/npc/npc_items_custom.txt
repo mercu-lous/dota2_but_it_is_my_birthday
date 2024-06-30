@@ -104,27 +104,6 @@
 				"xp_per_use"			"75"
 		}
 	}
-	"item_philosophers_stone"
-	{
-			
-		// Item Info
-		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"10"
-		"ItemIsNeutralDrop"				"0"
-		"DisplayOverheadAlertOnReceived" "0"
-		"ItemPurchasable"				"1"
-		"ItemSellable"				"1"
-		
-
-		// Special	
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityValues"
-		{
-				"bonus_gpm"			"150"
-				"bonus_mana"		"100"
-				"bonus_damage"		"0"
-		}
-	}
 		"item_travel_boots"
 	{
 		"ItemCost"						"10"

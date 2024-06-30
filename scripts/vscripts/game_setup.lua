@@ -13,7 +13,7 @@ if GameSetup == nil then
       GameRules:SetCustomGameSetupAutoLaunchDelay(0)
       GameRules:SetHeroSelectionTime(100)
       -- GameRules:SetStrategyTime(10)
-      -- GameRules:SetPreGameTime(20)
+      GameRules:SetPreGameTime(20)
       GameRules:SetShowcaseTime(0)
       GameRules:SetPostGameTime(5)
       
@@ -34,6 +34,7 @@ if GameSetup == nil then
   
       --multiple players can pick the same hero
       GameRules:SetSameHeroSelectionEnabled(true)
+      
   
       --force single hero selection (optional)
       if forceHero ~= nil then
