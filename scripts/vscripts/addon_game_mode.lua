@@ -34,6 +34,7 @@ end
 
 -- Evaluate the state of the game
 function CAddonTemplateGameMode:OnThink()
+	if IsServer() then
 	if GameRules:State_Get() == DOTA_GAMERULES_STATE_GAME_IN_PROGRESS then
 		local maxPlayers = 5
 		for teamNum = DOTA_TEAM_GOODGUYS, DOTA_TEAM_BADGUYS do
@@ -53,5 +54,6 @@ function CAddonTemplateGameMode:OnThink()
 	elseif GameRules:State_Get() >= DOTA_GAMERULES_STATE_POST_GAME then
 		return nil
 	end
+end
 	return 1
 end

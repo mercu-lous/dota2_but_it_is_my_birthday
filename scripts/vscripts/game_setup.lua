@@ -45,14 +45,15 @@ if GameSetup == nil then
       ListenToGameEvent("game_rules_state_change", Dynamic_Wrap(self, "OnStateChange"), self)
       
     else --release build
-  
+      local GameMode = GameRules:GetGameModeEntity()
+
       --put your rules here
       GameRules:SetSameHeroSelectionEnabled(true)
       GameRules:SetHeroSelectionTime(180)
       GameRules:SetStrategyTime(30)
       GameMode:SetDaynightCycleAdvanceRate(1.3)
       GameMode:SetDaynightCycleDisabled(false)
-
+      GameMode:SetThink( "OnThink", self, "GlobalThink", 2 )
     end
   end
   
@@ -81,4 +82,29 @@ if GameSetup == nil then
         end
       end
     end
+  end
+
+  function CAddonTemplateGameMode:OnThink()
+    if IsServer() then
+    if GameRules:State_Get() == DOTA_GAMERULES_STATE_GAME_IN_PROGRESS then
+      local maxPlayers = 5
+      for teamNum = DOTA_TEAM_GOODGUYS, DOTA_TEAM_BADGUYS do
+        for i=1, maxPlayers do
+        local playerID = PlayerResource:GetNthPlayerIDOnTeam(teamNum, i)
+        if playerID ~= nil then
+          if PlayerResource:HasSelectedHero(playerID) then
+          local hPlayer = PlayerResource:GetPlayer(playerID)
+          if hPlayer ~= nil then
+            local hero = hPlayer:GetAssignedHero()
+            hero:ModifyGold(4, true, DOTA_ModifyGold_Unspecified)
+          end
+          end
+        end
+        end
+      end
+    elseif GameRules:State_Get() >= DOTA_GAMERULES_STATE_POST_GAME then
+      return nil
+    end
+  end
+    return 1
   end

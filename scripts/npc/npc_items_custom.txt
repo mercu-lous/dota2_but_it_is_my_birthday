@@ -197,4 +197,19 @@
 	{
 		"SecretShop"					"0"	
 	}
+		"item_philosophers_stone"
+	{
+		"ItemCost"						"10"
+		"ItemIsNeutralDrop"				"0"
+		"DisplayOverheadAlertOnReceived" "0"
+		"ItemPurchasable"				"1"
+		"ItemSellable"				"1"
+
+		"AbilityValues"
+		{
+				"bonus_gpm"			"150"
+				"bonus_mana"		"0"
+				"bonus_damage"		"0"
+		}
+	}
 }
