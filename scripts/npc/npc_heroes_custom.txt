@@ -143,7 +143,7 @@
 		"AttackRate"		"1.4"
 	}
 	"npc_dota_hero_witch_doctor" {
-		"ModelScale"		"0.20000"
+		"ModelScale"		"0.33000"
 		"MovementSpeed" "475"
 		"RingRadius"		"150"
 		"VisionDaytimeRange"		"1200"

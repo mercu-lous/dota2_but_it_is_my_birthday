@@ -11,7 +11,7 @@ if GameSetup == nil then
       --skip all the starting game mode stages e.g picking screen, showcase, etc
       GameRules:EnableCustomGameSetupAutoLaunch(true)
       GameRules:SetCustomGameSetupAutoLaunchDelay(0)
-      GameRules:SetHeroSelectionTime(100)
+      GameRules:SetHeroSelectionTime(150)
       -- GameRules:SetStrategyTime(10)
       GameRules:SetPreGameTime(20)
       GameRules:SetShowcaseTime(0)
@@ -84,7 +84,7 @@ if GameSetup == nil then
     end
   end
 
-  function CAddonTemplateGameMode:OnThink()
+  function GameSetup:OnThink()
     if IsServer() then
     if GameRules:State_Get() == DOTA_GAMERULES_STATE_GAME_IN_PROGRESS then
       local maxPlayers = 5
