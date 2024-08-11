@@ -66,17 +66,25 @@
 	
 	"item_recipe_travel_boots_2"
 	{
-		"ItemCost"						"10"	
+		"ItemCost"						"10"
 	}
 	
 	"item_travel_boots"
 	{
 		"ItemCost"						"20"
+		"AbilityValues"
+		{
+			"bonus_movement_speed"	"70"
+		}
 	}
 	
 	"item_travel_boots_2"
 	{
 		"ItemCost"						"30"
+		"AbilityValues"
+		{
+			"bonus_movement_speed"	"70"
+		}	
 	}
 	"item_ultimate_orb"
 	{
@@ -147,7 +155,7 @@
 	{
 		"SecretShop"					"0"	
 	}
-		"item_philosophers_stone"
+	"item_philosophers_stone"
 	{
 		"ItemCost"						"10"
 		"ItemIsNeutralDrop"				"0"
@@ -157,7 +165,7 @@
 
 		"AbilityValues"
 		{
-				"bonus_gpm"			"150"
+				"bonus_gpm"			"1000"
 				"bonus_mana"		"0"
 				"bonus_damage"		"0"
 		}

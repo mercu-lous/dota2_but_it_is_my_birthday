@@ -19,7 +19,7 @@
 	{
 		"AttributeBaseStrength"		"35"
 		"AttributeStrengthGain"		"14.000000"
-		"AttributeBaseIntelligence"	"100"
+		"AttributeBaseIntelligence"	"75"
 	}
 		"npc_dota_hero_snapfire" 
 	{
@@ -48,7 +48,7 @@
 		"AttackDamageMin"		"11"
 		"AttackDamageMax"		"18"
 		"AttackRange"		"725"
-		"AttributePrimary"		"DOTA_ATTRIBUTE_INTELLIGENCE"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_INTELLECT"
 		"AttributeBaseStrength"		"20"
 		"AttributeStrengthGain"		"2.800000"
 		"AttributeBaseIntelligence"		"27"
@@ -79,9 +79,6 @@
 	}
 	"npc_dota_hero_necrolyte" {
 		"ArmorPhysical"			"12"
-		"Ability7" "riki_backstab"
-		"Ability8" "huskar_berserkers_blood"
-		"Ability9" "alchemist_goblins_greed"
 	}
 	"npc_dota_hero_pugna" {
 		"Ability7" "merc_magic_resistance_lua"
@@ -155,8 +152,8 @@
 	}
 
 	"npc_dota_hero_medusa" {
-		"AttackRange"		"1150"
-		"AttributeStrengthGain"		"3.5"
+		"AttackRange"		"1400"
+		"AttributeStrengthGain"		"5.5"
 	}
 	"npc_dota_hero_primal_beast" {
 		"MovementSpeed"		"400"
@@ -174,11 +171,16 @@
 	}
 	"npc_dota_hero_luna" {
 		"ProjectileSpeed"		"2000"
+		"Ability10" "special_bonus_unique_luna_8"
+		"Ability14" "special_bonus_unique_luna_7"
 	}
 	"npc_dota_hero_broodmother" {
 		"Ability9" "merc_movespeed_cap_increase"
 	}
 	"npc_dota_hero_bane" {
 		"ability9" "merc_prospecting"
+	}
+	"npc_dota_hero_bristleback" {
+		"ability8" "merc_status_resistance"
 	}
 }
