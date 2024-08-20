@@ -30,7 +30,7 @@
 	
 		"item_tome_of_knowledge"
 	{
-		"ItemCost"						"200"
+		"ItemCost"						"750"
 		"ItemPurchasable"				"1"
 		"ItemShopTags"					"consumable"
 		"ItemQuality"					"consumable"
@@ -40,14 +40,13 @@
 		"AbilitySharedCooldown"			"tome"
 		"ItemInitialCharges"			"1"
 		"ItemDisplayCharges"			"1"
-		"ItemStockMax"					"10"
+		"ItemStockMax"					"5"
 		"ItemStockInitial"				"0"
-		"ItemStockTime"					"60"			  
+		"ItemStockTime"					"20"			  
 		"ItemInitialStockTime"			"180"  
 		"IsObsolete"					"0"
 
-		// Special	
-		//-------------------------------------------------------------------------------------------------------------
+
 		"AbilityValues"
 		{
 				"xp_bonus"				"700"
@@ -165,9 +164,177 @@
 
 		"AbilityValues"
 		{
-				"bonus_gpm"			"1000"
+				"bonus_gpm"			"1500"
 				"bonus_mana"		"0"
 				"bonus_damage"		"0"
 		}
 	}
+
+	"item_recipe_merc_fun"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"8205"
+		"BaseClass"						"item_datadriven"
+		"AbilityTextureName"			"item_heart"
+		"Model"							"models/props_gameplay/recipe.vmdl"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"0"	
+		"ItemShopTags"					""
+
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_merc_fun"
+		"ItemRequirements"
+		{
+			"01"						"item_slippers;item_branches;item_mantle;item_gauntlets"
+		}
+	}
+
+	"item_merc_fun"
+{
+	"ID"							"8206"
+	"BaseClass"						"item_datadriven"
+	"AbilityTextureName"			"item_claymore"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"ItemStackable"					"0"
+	"ItemCost"						"470"
+	"ItemShopTags"					"str,agi,int"
+	"ItemQuality"					"rare"
+	"ItemAliases"					"Fun Merc Item"
+	"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+	"ItemDisassembleRule" 			"DOTA_ITEM_DISASSEMBLE_NEVER"
+
+
+	"Modifiers"
+	{
+		"modifier_custom_item_health_bonus"
+		{
+			"Passive" "1"
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS" "10"
+				"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS" "10"
+				"MODIFIER_PROPERTY_STATS_AGILITY_BONUS" "10"
+				"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE" "10"
+				"MODIFIER_PROPERTY_RESPAWNTIME" "-10"
+				"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "10"
+				"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS" "10"
+				"MODIFIER_PROPERTY_EVASION_CONSTANT" "10"
+				"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE" "-10"
+				"MODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE" "10"
+				"MODIFIER_PROPERTY_MAGICDAMAGEOUTGOING_PERCENTAGE" "10"
+			}
+
+		}
+	}
+}
+
+	"item_recipe_merc_fun_2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"8207"
+		"BaseClass"						"item_datadriven"
+		"AbilityTextureName"			"item_heart"
+		"Model"							"models/props_gameplay/recipe.vmdl"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"0"	
+		"ItemShopTags"					""
+
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_merc_fun_2"
+		"ItemRequirements"
+		{
+			"01"						"item_ultimate_orb;item_reaver;item_eagle;item_mystic_staff"
+		}
+	}
+
+	"item_merc_fun_2"
+{
+	"ID"							"8208"
+	"BaseClass"						"item_datadriven"
+	"AbilityTextureName"			"item_rapier"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"ItemStackable"					"0"
+	"ItemCost"						"11200"
+	"ItemShopTags"					"str,agi,int"
+	"ItemQuality"					"rare"
+	"ItemAliases"					"Fun Merc Item"
+	"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+	"ItemDisassembleRule" 			"DOTA_ITEM_DISASSEMBLE_NEVER"
+
+
+	"Modifiers"
+	{
+		"modifier_custom_item_health_bonus"
+		{
+			"Passive" "1"
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS" "90"
+				"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS" "90"
+				"MODIFIER_PROPERTY_STATS_AGILITY_BONUS" "90"
+				"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE" "90"
+				"MODIFIER_PROPERTY_RESPAWNTIME" "-90"
+				"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "90"
+				"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS" "90"
+				"MODIFIER_PROPERTY_EVASION_CONSTANT" "90"
+				"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE" "-90"
+				"MODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE" "90"
+				"MODIFIER_PROPERTY_MAGICDAMAGEOUTGOING_PERCENTAGE" "90"
+			}
+
+		}
+	}
+}
+
+
+	"item_armor_tier_1"
+	{
+    "BaseClass"                     "item_lua"
+    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"AbilityTextureName" 		"item_aether_lens"
+    "ScriptFile"                    "item_armor_tier_1"
+    "ItemCost"                      "1500"
+}
+
+"item_recipe_merc_Divine_Daedalus" {
+		"BaseClass"						"item_datadriven"
+		"Model"							"models/props_gameplay/recipe.vmdl"
+
+		"ItemCost"						"2500"	
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_merc_Divine_Daedalus"
+		"ItemRequirements"
+		{
+			"01"						"item_greater_crit;item_rapier"
+		}
+	}
+
+"item_merc_Divine_Daedalus" {
+ 	"BaseClass"                     "item_lua"
+    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"AbilityTextureName" 			"item_divine_daedalus_real"
+    "ScriptFile"                    "item_merc_Divine_Daedalus"
+    "ItemCost"                      "12200"
+	"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+	"ItemStockMax"					"1"
+	"ItemStockTime"					"1200.0"
+	"ItemKillable"					"0"
+	"ItemContributesToNetWorthWhenDropped"	"0"
+	"AllowedInBackpack"				"0"
+	"IsTempestDoubleClonable"		"0"
+	}
+
+
 }

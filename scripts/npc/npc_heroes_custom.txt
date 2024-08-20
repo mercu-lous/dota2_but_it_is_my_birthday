@@ -148,12 +148,12 @@
 	}
 
 	"npc_dota_hero_monkey_king" {
-		"AttackRange"		"450"
+		"AttackRange"		"550"
 	}
 
 	"npc_dota_hero_medusa" {
-		"AttackRange"		"1400"
-		"AttributeStrengthGain"		"5.5"
+		"AttackRange"		"1325"
+		"AttributeStrengthGain"		"3.5"
 	}
 	"npc_dota_hero_primal_beast" {
 		"MovementSpeed"		"400"
@@ -182,5 +182,12 @@
 	}
 	"npc_dota_hero_bristleback" {
 		"ability8" "merc_status_resistance"
+	}
+	"npc_dota_hero_bloodseeker" {
+		"AttackRate"		"1.4"
+		"ability9" "merc_knockback"
+	}
+	"npc_dota_hero_vengefulspirit" {
+		"ability9" "skeleton_king_reincarnation"
 	}
 }

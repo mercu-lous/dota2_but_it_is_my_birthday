@@ -1072,7 +1072,7 @@
 			}
 			"AbilityCooldown"			
 			{
-				"value"						"9 8 7 6"
+				"value"						"10"
 				"special_bonus_unique_kunkka_torrent_cooldown"			"-2.5"
 			}
 		}
@@ -1270,7 +1270,7 @@
 		{
 			"damage_bonus"
 			{
-				"value" "15 75 175 275"
+				"value" "15 100 200 300"
 			}
 		}
 	}
@@ -1294,7 +1294,7 @@
 			"skeleton_building_damage_reduction"			"0"
 			"damage_percent"		
 			{
-				"value"					"50 80 80 160 240"
+				"value"					"50 80 120 160 240"
 			}
 		}
 	}
@@ -1320,8 +1320,8 @@
 			}
 			"AbilityCooldown"
 			{
-				"value"									"40"
-				"special_bonus_unique_clinkz_10"		"-5"
+				"value"									"40 35 30 25"
+				"special_bonus_unique_clinkz_10"		"-10"
 			}
 			"skeleton_offset"				"250"
 			"skeleton_offset_min"				"150"
@@ -1397,6 +1397,20 @@
 	"DependentOnAbility" "bristleback_warpath"
 	"AbilityValues" {
 		"status_resistance" "20 40 60 80"
+	}
+}
+
+"merc_knockback"
+{
+	 "Innate" "1"
+    "BaseClass" "ability_lua"
+    "AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityUnitTargetType" "DOTA_UNIT_TARGET_HERO"
+    "ScriptFile" "merc_knockback"
+    "MaxLevel" "1"
+	
+	"AbilityValues" {
+		"knockback_distance" "200"
 	}
 }
 
@@ -2208,31 +2222,40 @@
 				"shard_duration"			"20 25 30 35"
 		}
 	}
-	"witch_doctor_maledict"
+	"witch_doctor_death_ward"
 	{
-		"AbilityDuration"				"15.0"
-
 		"AbilityValues"
 		{
-				"radius"
+				"bounce_radius"				
 				{
-					"value"			"200"
+					"value"		"1000"
+					"RequiresScepter"		"1"
 					"affected_by_aoe_increase"	"1"
-				"special_bonus_unique_witch_doctor_6" "+100"
 				}
-				"bonus_damage"				
+				"scepter_lifesteal"			
 				{
-					"value"			"16 24 32 40"
-				"special_bonus_unique_witch_doctor_7" "+30"
+					"value"		"15"
+					"RequiresScepter"		"1"
 				}
-				"bonus_damage_threshold"	"100"
-				"ticks"
+				"bonus_accuracy"			"100"
+				"initial_target_count"
 				{
-					"value"		"6"
-					"LinkedSpecialBonusField"		"value2"
-				}			
+					"value"						"2"
+					"special_bonus_facet_witch_doctor_cleft_death"	"+3"
+				}
+				"secondary_attack_damage_pct"
+				{
+					"value"						"70"
+					"special_bonus_facet_witch_doctor_cleft_death"	"=70"
+				}
 		}
-		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_5"
+	}
+	"witch_doctor_voodoo_switcheroo"
+	{
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"10"
+		"AbilityManaCost"				"100"
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
 	}
 	"mirana_leap"
 	{
@@ -2825,6 +2848,22 @@
 			"duration"				"2.0 3.0 4.0 5.0"
 		}
 	}
+	"medusa_gorgon_grasp"
+	{
+		"AbilityValues"
+		{
+			"radius"
+			{
+				"value"					"200"
+				"affected_by_aoe_increase"	"1"
+			}
+			"radius_grow"				"100"
+			"delay"						".75"
+			"volley_interval"			".25"
+			"volley_spread_pct"			"215"
+		}		
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
+	}
 	"medusa_split_shot"
 	{
 		"AbilityValues"
@@ -2848,14 +2887,6 @@
 					"value"			"0"
 					"special_bonus_unique_medusa_4"		"+1"
 				}
-		}
-	}
-"medusa_mana_shield"
-	{
-		"AbilityValues"
-		{
-			"damage_per_mana"						"2.0"
-			"damage_per_mana_per_level"				"0.133"
 		}
 	}
 	"ancient_apparition_cold_feet"
@@ -3096,7 +3127,8 @@
 	}
 "furion_teleportation"
 	{
-		"AbilityCastPoint"				"3 2 1 0"
+		"AbilityCastPoint"				"2 1.5 1 0"
+		"AbilityManaCost" "50 100 150 200"
 	}
 	"furion_force_of_nature"
 	{
@@ -3107,19 +3139,19 @@
 			{
 				"value"						"650 750 850 950"
 				"special_bonus_facet_furion_ironwood_treant"	"=1000 =1250 =1500 =1750"
-				"special_bonus_unique_furion"			"x3"
+				"special_bonus_unique_furion"			"x4"
 			}
 			"treant_damage_min"
 			{
 				"value"					"13 21 29 37"
 				"special_bonus_facet_furion_ironwood_treant"				"=60 =80 =100 =120"
-				"special_bonus_unique_furion"			"x3"
+				"special_bonus_unique_furion"			"x4"
 			}
 			"treant_damage_max"
 			{
 				"value"					"17 25 33 41"
 				"special_bonus_facet_furion_ironwood_treant"				"=80 =100 =120 =140"
-				"special_bonus_unique_furion"			"x3"
+				"special_bonus_unique_furion"			"x4"
 			}		
 		}
 	}
@@ -3292,6 +3324,108 @@
 			}
 		}
 	}
+	"bloodseeker_rupture"
+	{
+		"AbilityValues"
+		{
+			"movement_damage_pct"		
+			{
+				"value"	"50 60 70"
+				"CalculateSpellDamageTooltip"	"0"
+			}
+			"knockback"	
+			{
+				"value"		"0"
+				"special_bonus_facet_bloodseeker_arterial_spray" "275"
+			}
+		}
+	}
+	"bloodseeker_blood_mist"
+	{
+		"AbilityValues"
+		{
+			"hp_cost_per_second"	
+			{
+				"value"				"10"
+				"DamageTypeTooltip"		"DAMAGE_TYPE_MAGICAL"
+			}
+			"radius"				
+			{
+				"value"		"750"
+				"affected_by_aoe_increase"	"1"
+			}
+			"movement_slow"			"50"	
+		}
+	}
+	"bloodseeker_sanguivore"
+	{
+		"IsBreakable"					"0"
+		"AbilityValues"
+		{
+			"base_heal"							"300"
+			"heal_hp_pct_per_level"				"5"
+			"creep_lifesteal_reduction_pct"		"0"
+			"deny_lifesteal_reduction_pct"						"0"
+			"half_bonus_aoe"		
+			{
+				"value"		"1000"
+				"affected_by_aoe_increase"	"1"
+			}
+		}
+	}
+	"bloodseeker_thirst"
+	{
+		"AbilityValues"
+		{
+			"min_bonus_pct"				"100"
+			"bonus_movement_speed"		
+			{
+				"value"									"40 60 80 100"
+				"special_bonus_unique_bloodseeker_4"	"+90"
+			}
+			"max_bonus_pct"				"33"
+			"visibility_threshold_pct"	"50"
+			"invis_threshold_pct"	"25"
+			"linger_duration"			"1.0"
+		}
+	}
+	"vengefulspirit_nether_swap"
+	{
+		"AbilityCooldown"				"5 3 1"
+		
+		"AbilityManaCost"				"100 150 200"
+		"AbilityValues"
+		{
+			"damage_reduction"
+			{
+				"value"					"0"
+				"DamageTypeTooltip"		"DAMAGE_TYPE_NONE"
+			}
+			"damage_reduction_duration"	
+			{
+				"value"					"1"
+				"DamageTypeTooltip"		"DAMAGE_TYPE_NONE"
+			}
+			"damage"
+			{	
+				"value"							"50"
+				"special_bonus_unique_vengeful_spirit_swap_damage"			"+50"
+			}
+			"vision_aoe"		
+				{
+					"value"		"550"
+					"affected_by_aoe_increase"	"1"
+				}
+		}
+	}
+	"vengefulspirit_wave_of_terror"
+	{
+		"AbilityCooldown"				"6 4 2 0"
+		"AbilityDuration"				"8"
+		"AbilityManaCost"				"40 60 80 100"
+	}
+
+
 }
 
 
