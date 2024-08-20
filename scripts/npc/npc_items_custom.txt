@@ -296,15 +296,68 @@
 	}
 }
 
+	"item_recipe_armor_tier_1"
+	{
+   "BaseClass"						"item_datadriven"
+		"Model"							"models/props_gameplay/recipe.vmdl"
 
+		"ItemCost"						"0"	
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_armor_tier_1"
+		"ItemRequirements"
+		{
+			"01"						"item_aether_lens;item_aether_lens"
+		}
+	}
 	"item_armor_tier_1"
 	{
     "BaseClass"                     "item_lua"
     "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-	"AbilityTextureName" 		"item_aether_lens"
+	"AbilityTextureName" 		"item_aether_lens_icon2"
     "ScriptFile"                    "item_armor_tier_1"
-    "ItemCost"                      "1500"
-}
+    "ItemCost"                      "4550"
+ 	"AbilityValues"
+    {
+        "cast_range_bonus" "500"
+        "mana_regen" "5"
+        "mana_bonus" "600"
+    }
+
+	}
+
+		"item_recipe_armor_tier_2"
+	{
+   "BaseClass"						"item_datadriven"
+		"Model"							"models/props_gameplay/recipe.vmdl"
+
+		"ItemCost"						"0"	
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_armor_tier_2"
+		"ItemRequirements"
+		{
+			"01"						"item_armor_tier_1;item_armor_tier_1"
+		}
+	}
+	"item_armor_tier_2"
+	{
+    "BaseClass"                     "item_lua"
+    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"AbilityTextureName" 		"item_aether_lens_icon3"
+    "ScriptFile"                    "item_armor_tier_2"
+    "ItemCost"                      "9100"
+
+ 		"AbilityValues"
+    	{
+        "cast_range_bonus" "1000"
+        "mana_regen" "10"
+        "mana_bonus" "1200"
+   	 	}
+
+	}
 
 "item_recipe_merc_Divine_Daedalus" {
 		"BaseClass"						"item_datadriven"
@@ -336,5 +389,53 @@
 	"IsTempestDoubleClonable"		"0"
 	}
 
+	"item_merc_high_roller"
+	{
+    "BaseClass"                     "item_lua"
+    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"AbilityTextureName" 			"item_high_roller"
+    "ScriptFile"                    "item_merc_high_roller"
+    "ItemCost"                      "5500"
+	}
+
+	"item_recipe_merc_high_roller"
+	{
+   "BaseClass"						"item_datadriven"
+		"Model"							"models/props_gameplay/recipe.vmdl"
+
+		"ItemCost"						"1200"	
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_merc_high_roller"
+		"ItemRequirements"
+		{
+			"01"						"item_relic;item_javelin"
+		}
+	}
+
+	"item_merc_tank_buster"
+	{
+    "BaseClass"                     "item_lua"
+    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"AbilityTextureName" 			"item_tank_buster"
+    "ScriptFile"                    "item_merc_tank_buster"
+    "ItemCost"                      "5500"
+	}
+	"item_recipe_merc_tank_buster"
+	{
+   "BaseClass"						"item_datadriven"
+		"Model"							"models/props_gameplay/recipe.vmdl"
+
+		"ItemCost"						"750"	
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_merc_tank_buster"
+		"ItemRequirements"
+		{
+			"01"						"item_mithril_hammer;item_javelin;item_blitz_knuckles"
+		}
+	}
 
 }
