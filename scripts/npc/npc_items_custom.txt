@@ -438,4 +438,50 @@
 		}
 	}
 
+	"item_tier1_token"
+	{
+		"ItemPurchasable"				"1"
+		"ItemSellable"				"1"
+		"ItemCost" "500"
+		"ItemStockInitial"				"5"
+		"ItemStockTime"					"5"			  
+		"ItemInitialStockTime"			"300"  
+	}
+	"item_tier2_token"
+	{
+		"ItemPurchasable"				"1"
+		"ItemSellable"				"1"
+		"ItemCost" "1500"
+		"ItemStockInitial"				"0"
+		"ItemStockTime"					"5"			  
+		"ItemInitialStockTime"			"600"  
+	}
+	"item_tier3_token"
+	{
+		"ItemIsNeutralDrop"				"1"
+		"ItemPurchasable"				"1"
+		"ItemSellable"				"1"
+		"ItemCost" "2500"
+		"ItemStockInitial"				"0"
+		"ItemStockTime"					"5"			  
+		"ItemInitialStockTime"			"900"  
+	}
+	"item_tier4_token"
+	{
+		"ItemIsNeutralDrop"				"1"
+		"ItemPurchasable"				"1"
+		"ItemSellable"				"1"
+		"ItemCost" "3500"
+	}
+	"item_tier5_token"
+	{
+		"ItemIsNeutralDrop"				"1"
+		"ItemPurchasable"				"1"
+		"ItemSellable"				"1"
+		"ItemCost" "5555"
+		"ItemStockInitial"				"0"
+		"ItemStockTime"					"5"			  
+		"ItemInitialStockTime"			"1200"  
+	}
+
 }

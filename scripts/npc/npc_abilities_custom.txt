@@ -160,8 +160,8 @@
 			"bonus_heal_amp_pct_allies"			"20 40 60 80"
 			"bonus_movement_speed_allies"		
 			{
-				"value"						"10"
-				"special_bonus_unique_pugna_decrepify_ally_movespeed"		"+10"
+				"value"						"60"
+				"special_bonus_unique_pugna_decrepify_ally_movespeed"		"+40"
 			}
 			"bonus_spell_damage_pct"	
 			{
@@ -1064,16 +1064,10 @@
 	{
 		"AbilityValues"
 		{
-			"slow_duration"				"1"
-			"torrent_damage"
-			{
-				"value"			"80"
-				"special_bonus_unique_kunkka_7"		"+20%"
-			}
 			"AbilityCooldown"			
 			{
-				"value"						"10"
-				"special_bonus_unique_kunkka_torrent_cooldown"			"-2.5"
+				"value"						"10 8 6 4"
+				"special_bonus_unique_kunkka_torrent_cooldown"			"-1"
 			}
 		}
 	}
@@ -1104,9 +1098,6 @@
 				}
 		}
 	}
-//=================================================================================================================
-	// Kunkka: X Marks the Spot
-	//=================================================================================================================
 	"kunkka_x_marks_the_spot"
 	{
 		"AbilityValues"
@@ -1125,15 +1116,12 @@
 	}
 "kunkka_ghostship"
 	{
-
 		"AbilityManaCost"				"150 250 350"
-
 		"AbilityValues"
 		{
-
 			"AbilityCooldown"				
 			{
-				"value"					"5 3 1"
+				"value"					"15 12.5 10"
 			}
 
 		}
@@ -2038,7 +2026,7 @@
 	{
 		"AbilityValues"
 		{
-				"reveal_linger"				"120"
+				"reveal_linger"				"180"
 				"reveal_radius"				"2000"
 		}
 	}
@@ -2064,7 +2052,7 @@
 				"special_bonus_unique_dawnbreaker_solar_guardian_cooldown"			"-20"
 			}
 
-			"airtime_duration"				"0.8"
+			"airtime_duration"				"0.1"
 			"radius"				
 			{
 				"value"															"650"
@@ -2081,7 +2069,7 @@
 				"value"				"45 70 95"
 				"special_bonus_scepter"	"+15 20 25"
 			}
-			"pulse_interval"				"0.20"
+			"pulse_interval"				"0.025"
 		}
 	}
 		"abyssal_underlord_atrophy_aura"
@@ -2403,6 +2391,10 @@
 			}
 		}
 	}
+	"monkey_king_boundless_strike"
+	{
+		"AbilityCastRange"				"2200"
+	}
 	"monkey_king_mischief"
 	{
 
@@ -2421,10 +2413,11 @@
 	}
 	"monkey_king_tree_dance"
 	{
+		"AbilityCastPoint"				"0.05"
 		"AbilityCastRange"				"1200"
 		"AbilityValues"
 		{
-			"leap_speed"				"1400"
+			"leap_speed"				"2000"
 		}
 	}
 	"monkey_king_jingu_mastery"
@@ -3425,6 +3418,158 @@
 		"AbilityManaCost"				"40 60 80 100"
 	}
 
+	"vengefulspirit_magic_missile"
+	{	
+		"AbilityValues"
+		{
+			"bounce_range_pct"			"2175"
+		}
+	}
+	"viper_poison_attack"
+	{
+		"AbilityValues"
+		{
+				"duration"						"1"
+				"damage"					
+				{
+					"value"					"16 32 48 64"
+					"special_bonus_unique_viper_7"	"+60%"
+				}	
+				"movement_speed"			
+				{
+					"value"					"12 24 36 48"
+					"special_bonus_unique_viper_7"	"+60%"
+				}
+				"magic_resistance"			
+				{
+					"value"			"16 24 32 40"
+					"special_bonus_unique_viper_4"	"+16"
+				}
+				"max_stacks"			"1"
+				"shard_bonus_max_stacks"
+				{
+					"special_bonus_shard"			"1"
+					"RequiresShard"		"1"
+				}
+		}
+	}
+	"viper_nethertoxin"
+	{
+		"AbilityValues"
+		{
+				"min_damage"			
+				{
+					"value"		"60 80 100 120"
+					"special_bonus_unique_viper_3"	"+160"
+				}
+				"max_damage"
+				{
+					"value"			"160 280 400 520"
+					"special_bonus_unique_viper_3"	"+160"
+				}
+				"max_duration"			"1"
+				"duration"			"2"
+		}
+	}
+
+	"viper_corrosive_skin"
+	{
+		"AbilityValues"
+		{
+			"duration"					"1.0"
+			"damage"
+			{
+				"value"					"32 64 96 128"
+				"special_bonus_unique_viper_1"	"+80"
+			}
+			"nethertoxin_bonus_pct"		
+			{
+				"value"					"0"
+				"special_bonus_facet_viper_caustic_bath"					"=1600"
+			}
+		}
+	}
+
+	"viper_predator"
+	{
+		"AbilityValues"
+		{
+			"damage_per_level"			"0.1"
+		}
+	}	
+
+	"viper_viper_strike"
+	{
+		"AbilityValues"
+		{
+			"duration"				"1"
+			"damage"
+			{
+				"value"				"420 660 900"
+				"special_bonus_unique_viper_2"	"+480"
+			}
+			"bonus_movement_speed"	"-360 -420 -460"
+			"bonus_attack_speed"	"-480 -720 -960"
+		}
+	}
+
+	"venomancer_area_poison"
+	{
+		"AbilityValues"
+		{
+			"duration"
+			{
+				"value" "30"
+			}
+		}
+	}
+	"venomancer_venomous_gale"
+	{
+		"AbilityValues"
+		{
+			"duration"				"30"
+		}
+	}
+	"venomancer_poison_sting"
+	{
+		"AbilityValues"
+		{
+			"duration"				"12 18 24 30"
+		}
+	}
+
+	"venomancer_plague_ward"
+	{
+		"AbilityValues"
+		{
+			"AbilityCooldown"
+			{
+				"value"			"5 4 3 2"
+				"special_bonus_unique_venomancer_8"			"-1.7"
+			}
+		}
+	}
+	"venomancer_noxious_plague"
+	{
+		"AbilityValues"
+		{
+			"debuff_duration"			"10"
+		}
+	}
+	"venomancer_poison_nova"
+	{
+		"AbilityValues"
+		{
+			"duration"					"20"
+		}
+	}
+	"venomancer_latent_poison"
+	{
+		"AbilityValues"
+		{
+			"duration"				"14"
+		}
+	}
 
 }
 
