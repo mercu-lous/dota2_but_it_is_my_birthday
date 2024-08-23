@@ -3661,6 +3661,21 @@
 	{
 		"AbilityCooldown"				"14 12 10 8"
 		"AbilityManaCost"				"60"
+
+		"AbilityValues" {
+			"start_width"
+			{
+				"value"		"200"
+				"affected_by_aoe_increase"	"1"
+				"special_bonus_unique_ringmaster_whip_radius"	"+75"
+			}
+			"end_width"
+			{
+				"value"		"500"
+				"affected_by_aoe_increase"	"1"
+				"special_bonus_unique_ringmaster_whip_radius"	"+75"
+			}
+		}
 	}
 
 	"ringmaster_the_box"
