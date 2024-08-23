@@ -190,4 +190,7 @@
 	"npc_dota_hero_vengefulspirit" {
 		"ability9" "skeleton_king_reincarnation"
 	}
+	"npc_dota_hero_tinker" {
+		"Ability3" "tinker_heat_seeking_missile"
+	}
 }

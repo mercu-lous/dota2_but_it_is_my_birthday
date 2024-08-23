@@ -2961,7 +2961,7 @@
 	"mars_spear" {
 		"AbilityManaCost"				"30"
 		"AbilityValues" {
-			"spear_range"		"2000 2400 2800 3200"
+			"spear_range"		"2500 3000 3500 4000"
 		}
 	}
 	"mars_gods_rebuke"
@@ -3568,6 +3568,178 @@
 		"AbilityValues"
 		{
 			"duration"				"14"
+		}
+	}
+
+	"tinker_eureka"
+	{
+		"AbilityValues"
+		{
+			"max_cdr"						"90"
+		}
+	}
+
+	"tinker_shrink_ray"
+	{
+		"AbilityValues"
+		{
+			"duration"
+			{
+				"value" "7"
+			}
+			"max_stacks"
+			{
+				"value" "20"
+			}
+		}
+	}
+	
+	"tinker_heat_seeking_missile"
+	{
+		"AbilityValues"
+		{ 
+				"targets"			
+				{
+					"value"	"2 3 4 5"
+				}
+				"speed"				"200"
+				"radius_explosion"				"100"
+				"splash_pct"		"50"
+		}
+	}
+	"tinker_march_of_the_machines"
+	{
+		"AbilityValues"
+		{
+			"radius"				
+			{
+				"value"		"3000"
+				"affected_by_aoe_increase"	"1"
+			}
+			"collision_radius"		"50"
+			"splash_radius"			"150"
+			"duration"
+			{
+				"value"											"12.0"
+				"special_bonus_unique_tinker_march_duration"	"+1.0"
+			}
+			"speed"					"1500"
+			"machines_per_sec"		"75"
+			"distance"				"6000"
+			"damage"				"17 26 35 44"
+			"heal_per_second"
+			{
+				"value"									"14 21 28 35"
+				"special_bonus_facet_tinker_repair_bots"	"+0"
+			}
+			"heal_duration"
+			{
+				"value"									"4"
+				"special_bonus_facet_tinker_repair_bots"	"0"
+			}
+		}
+	}
+	"tinker_rearm"
+	{
+		"AbilityChannelTime"				"2.75 1.5 0.25"		
+	}
+
+	"ringmaster_spotlight"
+	{
+		"AbilityCastRange"				"2000"
+		"AbilityManaCost"				"25"
+		"AbilityValues"
+		{
+			"radius"
+			{
+				"value"		"850"
+				"affected_by_aoe_increase"	"1"
+			}
+		}
+	}	
+	"ringmaster_tame_the_beasts"
+	{
+		"AbilityCooldown"				"14 12 10 8"
+		"AbilityManaCost"				"60"
+	}
+
+	"ringmaster_the_box"
+	{
+		"AbilityCastPoint"				"0"
+		"AbilityCooldown"				"30 24 18 12"
+		"AbilityManaCost"				"40"
+		"AbilityValues"
+		{
+			"AbilityCastRange"
+			{
+				"value"			"900"
+				"special_bonus_unique_ringmaster_box_cast_range"		"+200"
+			}
+		}
+	}
+	"ringmaster_wheel"
+	{
+		"AbilityCooldown"				"70 60 50"
+		"AbilityManaCost"				"100 200 300"
+		"AbilityValues"
+		{
+			"min_range"			"800"
+			"mesmerize_radius"		
+			{
+				"value"		"800"
+				"affected_by_aoe_increase"	"1"
+				"special_bonus_unique_ringmaster_wheel_radius" "+100"
+			}
+			"AbilityCastRange"
+			{
+				"value"		"1700"
+				"special_bonus_unique_ringmaster_wheel_radius" "+300"
+			}
+		}
+	}
+	"ringmaster_impalement"
+	{
+		"AbilityCastRange"				"3000"
+		"AbilityCharges"			"2 3 4 5"
+		"AbilityChargeRestoreTime"		"12"
+		"AbilityManaCost"				"40"
+		"AbilityValues"
+		{
+			"dagger_width"				"200"
+			"dagger_range"				"4000"
+			"dagger_vision"				"300"
+		}
+	}
+
+	"ringmaster_dark_carnival_souvenirs"
+	{
+		"AbilityValues"
+		{
+			"souvenir_collection_range"	"1425"
+		}
+	}
+	"ringmaster_funhouse_mirror"
+	{
+		"AbilityValues"
+		{
+			"images_count"						"2"
+		}
+	}
+	"ringmaster_whoopee_cushion"
+	{
+		"AbilityValues"
+		{
+			"leap_distance"			"800"
+		}
+	}
+	"ringmaster_strongman_tonic"
+	{
+		"AbilityValues"
+		{
+			"strength_bonus_base"		"10.0"
+			"strength_bonus_per_level"	"3.0"
+			"model_scale"				"50"
+			"model_scale_animate_time"	"0.5"
 		}
 	}
 

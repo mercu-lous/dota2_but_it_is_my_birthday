@@ -161,6 +161,7 @@
 		"DisplayOverheadAlertOnReceived" "0"
 		"ItemPurchasable"				"1"
 		"ItemSellable"				"1"
+		"ItemAliases"					"Fun, Merc, Item, stats"
 
 		"AbilityValues"
 		{
@@ -176,12 +177,12 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"ID"							"8205"
 		"BaseClass"						"item_datadriven"
-		"AbilityTextureName"			"item_heart"
+		"AbilityTextureName"			""
 		"Model"							"models/props_gameplay/recipe.vmdl"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"0"	
+		"ItemCost"						"25"	
 		"ItemShopTags"					""
 
 		// Recipe
@@ -190,7 +191,7 @@
 		"ItemResult"					"item_merc_fun"
 		"ItemRequirements"
 		{
-			"01"						"item_slippers;item_branches;item_mantle;item_gauntlets"
+			"01"						"item_slippers;item_circlet;item_mantle;item_gauntlets"
 		}
 	}
 
@@ -200,14 +201,12 @@
 	"BaseClass"						"item_datadriven"
 	"AbilityTextureName"			"item_claymore"
 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-	"ItemStackable"					"0"
-	"ItemCost"						"470"
-	"ItemShopTags"					"str,agi,int"
+	"ItemCost"						"600"
+	"ItemShopTags"					"Fun, Merc, Item, stats"
 	"ItemQuality"					"rare"
-	"ItemAliases"					"Fun Merc Item"
+	"ItemAliases"					"Fun, Merc, Item, stats"
 	"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 	"ItemDisassembleRule" 			"DOTA_ITEM_DISASSEMBLE_NEVER"
-
 
 	"Modifiers"
 	{
@@ -216,17 +215,16 @@
 			"Passive" "1"
 			"Properties"
 			{
-				"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS" "10"
-				"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS" "10"
-				"MODIFIER_PROPERTY_STATS_AGILITY_BONUS" "10"
-				"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE" "10"
-				"MODIFIER_PROPERTY_RESPAWNTIME" "-10"
-				"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "10"
-				"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS" "10"
-				"MODIFIER_PROPERTY_EVASION_CONSTANT" "10"
-				"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE" "-10"
-				"MODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE" "10"
-				"MODIFIER_PROPERTY_MAGICDAMAGEOUTGOING_PERCENTAGE" "10"
+				"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS" "5"
+				"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS" "5"
+				"MODIFIER_PROPERTY_STATS_AGILITY_BONUS" "5"
+				"MODIFIER_PROPERTY_RESPAWNTIME" "-5"
+				"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "1.75"
+				"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE" "3"
+				"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT" "1"
+				"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "5"
+				"MODIFIER_PROPERTY_MANA_BONUS" "30"
+				"MODIFIER_PROPERTY_HEALTH_BONUS" "50"
 			}
 
 		}
@@ -244,7 +242,7 @@
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"0"	
+		"ItemCost"						"9000"	
 		"ItemShopTags"					""
 
 		// Recipe
@@ -263,11 +261,10 @@
 	"BaseClass"						"item_datadriven"
 	"AbilityTextureName"			"item_rapier"
 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-	"ItemStackable"					"0"
-	"ItemCost"						"11200"
-	"ItemShopTags"					"str,agi,int"
+	"ItemCost"						"20200"
+	"ItemShopTags"					""
 	"ItemQuality"					"rare"
-	"ItemAliases"					"Fun Merc Item"
+	"ItemAliases"					"Secret"
 	"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 	"ItemDisassembleRule" 			"DOTA_ITEM_DISASSEMBLE_NEVER"
 
@@ -286,8 +283,7 @@
 				"MODIFIER_PROPERTY_RESPAWNTIME" "-90"
 				"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "90"
 				"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS" "90"
-				"MODIFIER_PROPERTY_EVASION_CONSTANT" "90"
-				"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE" "-90"
+				"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE" "-20"
 				"MODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE" "90"
 				"MODIFIER_PROPERTY_MAGICDAMAGEOUTGOING_PERCENTAGE" "90"
 			}
@@ -318,6 +314,7 @@
 	"AbilityTextureName" 		"item_aether_lens_icon2"
     "ScriptFile"                    "item_armor_tier_1"
     "ItemCost"                      "4550"
+	"ItemAliases"					"Fun, Merc, Item, stats"
  	"AbilityValues"
     {
         "cast_range_bonus" "500"
@@ -349,6 +346,7 @@
 	"AbilityTextureName" 		"item_aether_lens_icon3"
     "ScriptFile"                    "item_armor_tier_2"
     "ItemCost"                      "9100"
+	"ItemAliases"					"Fun, Merc, Item, stats"
 
  		"AbilityValues"
     	{
@@ -387,7 +385,9 @@
 	"ItemContributesToNetWorthWhenDropped"	"0"
 	"AllowedInBackpack"				"0"
 	"IsTempestDoubleClonable"		"0"
+	"ItemAliases"					"Fun, Merc, Item, stats, divine, damage"
 	}
+
 
 	"item_merc_high_roller"
 	{
@@ -421,6 +421,7 @@
 	"AbilityTextureName" 			"item_tank_buster"
     "ScriptFile"                    "item_merc_tank_buster"
     "ItemCost"                      "5500"
+	"ItemAliases"					"Fun, Merc, Item, stats,"
 	}
 	"item_recipe_merc_tank_buster"
 	{
@@ -446,6 +447,7 @@
 		"ItemStockInitial"				"5"
 		"ItemStockTime"					"5"			  
 		"ItemInitialStockTime"			"300"  
+		"ItemAliases"					"Fun, Merc, Item, stats"
 	}
 	"item_tier2_token"
 	{
@@ -455,6 +457,7 @@
 		"ItemStockInitial"				"0"
 		"ItemStockTime"					"5"			  
 		"ItemInitialStockTime"			"600"  
+		"ItemAliases"					"Fun, Merc, Item, stats"
 	}
 	"item_tier3_token"
 	{
@@ -465,6 +468,7 @@
 		"ItemStockInitial"				"0"
 		"ItemStockTime"					"5"			  
 		"ItemInitialStockTime"			"900"  
+		"ItemAliases"					"Fun, Merc, Item, stats"
 	}
 	"item_tier4_token"
 	{
@@ -472,6 +476,7 @@
 		"ItemPurchasable"				"1"
 		"ItemSellable"				"1"
 		"ItemCost" "3500"
+		"ItemAliases"					"Fun, Merc, Item, stats"
 	}
 	"item_tier5_token"
 	{
@@ -482,6 +487,6 @@
 		"ItemStockInitial"				"0"
 		"ItemStockTime"					"5"			  
 		"ItemInitialStockTime"			"1200"  
+		"ItemAliases"					"Fun, Merc, Item, stats"
 	}
-
 }
