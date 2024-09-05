@@ -233,8 +233,6 @@
 
 	"item_recipe_merc_fun_2"
 	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
 		"ID"							"8207"
 		"BaseClass"						"item_datadriven"
 		"AbilityTextureName"			"item_heart"
@@ -283,9 +281,11 @@
 				"MODIFIER_PROPERTY_RESPAWNTIME" "-90"
 				"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "90"
 				"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS" "90"
+				"MODIFIER_PROPERTY_STATUS_RESISTANCE_BONUS" "90"
 				"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE" "-20"
 				"MODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE" "90"
 				"MODIFIER_PROPERTY_MAGICDAMAGEOUTGOING_PERCENTAGE" "90"
+				"MODIFIER_PROPERTY_STATUS_RESISTANCE_STACKING" "60"
 			}
 
 		}

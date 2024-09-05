@@ -104,8 +104,8 @@
 
 				"KeyValueOverrides"
 				{
-					"AttributeBaseStrength"		"30"
-					"AttributeStrengthGain"		"6.9"
+					"AttributeBaseStrength"		"25"
+					"AttributeStrengthGain"		"4.9"
 				}
 			}
 		}
